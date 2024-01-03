@@ -22,3 +22,4 @@ public class LowerCase {
         
         return newStr;
     }
+}

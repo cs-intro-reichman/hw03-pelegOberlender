@@ -5,13 +5,20 @@ public class UniqueChars {
         System.out.println(uniqueChars(str));
     }
 
-    /**
-     * Returns a string which is identical to the original string, 
-     * except that all the duplicate characters are removed,
-     * unless they are space characters.
-     */
-    public static String uniqueChars(String s) {
-        // Replace the following statement with your code
-        return null;
+    public static String uniqueChars(String s) {  
+        String newStr = "";
+
+        for (int i = 0; i < s.length(); i++) {
+            char c = (char)s.charAt(i);
+
+            if (newStr.indexOf(c) == -1)  {
+                newStr += c;       
+            } else if (c == ' ') {
+                newStr += c; 
+            }
+        }
+
+        return newStr;
     }
 }
+

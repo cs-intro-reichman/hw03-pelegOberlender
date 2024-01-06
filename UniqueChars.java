@@ -9,7 +9,7 @@ public class UniqueChars {
         String newStr = "";
 
         for (int i = 0; i < s.length(); i++) {
-            char c = (char)s.charAt(i);
+            char c = s.charAt(i);
 
             if (newStr.indexOf(c) == -1)  {
                 newStr += c;       

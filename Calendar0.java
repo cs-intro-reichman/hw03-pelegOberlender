@@ -47,9 +47,9 @@ public class Calendar0 {
 			return 30; 
 		} else if(month == 2) {
 			if(isLeapYear(year))
-				return 28;
-			else {
 				return 29;
+			else {
+				return 28;
 			}
 		} else {
 			return 31;
